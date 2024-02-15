@@ -11,27 +11,27 @@
   transition: all 400ms ease-in-out 2s;
   animation: fadeIn 400ms;
 }
-.modal__poster-img {
+.modal-poster-img {
   width: 100%;
   height: auto;
 }
-.modal__content {
+.modal-content {
   padding: 40px;
 }
-.modal__title {
+.modal-title {
   padding: 0;
   font-size: 40px;
   margin: 16px 0;
 }
-.modal__details {
+.modal-details {
   font-weight: 600;
   font-size: 18px;
 }
-.modal__overview {
+.modal-overview {
   font-size: 20px;
   line-height: 1.5;
 }
-.modal__user-perc {
+.modal-user-perc {
   color: #46d369;
 }
 .modal::-webkit-scrollbar {
@@ -78,10 +78,10 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .modal__overview {
+  .modal-overview {
     font-size: 16px;
   }
-  .modal__details {
+  .modal-details {
     font-size: 16px;
   }
   .wrapper-modal {

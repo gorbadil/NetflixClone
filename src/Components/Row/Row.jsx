@@ -35,7 +35,7 @@ const Row = ({ title, fetchUrl, isLargeRow, id }) => {
       {/** TITLE */}
       <h2>{title}</h2>
       <div className="slider">
-        <div className="slider__arrow-left">
+        <div className="slider-arrow-left">
           <span
             className="arrow"
             onClick={() => {
@@ -45,13 +45,13 @@ const Row = ({ title, fetchUrl, isLargeRow, id }) => {
             <ArrowBackIosIcon />
           </span>
         </div>
-        <div id={id} className="row__posters">
+        <div id={id} className="row-posters">
           {/**SEVERAL ROW__POSTER */}
           {movies.map((movie) => (
             <img
               key={movie.id}
               onClick={() => handleClick(movie)}
-              className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+              className={`row-poster ${isLargeRow && "row-posterLarge"}`}
               src={`${base_url}${
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}
@@ -60,7 +60,7 @@ const Row = ({ title, fetchUrl, isLargeRow, id }) => {
             />
           ))}
         </div>
-        <div className="slider__arrow-right">
+        <div className="slider-arrow-right">
           <span
             className="arrow"
             onClick={() => {
