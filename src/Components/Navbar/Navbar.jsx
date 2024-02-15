@@ -18,16 +18,16 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={`nav ${show && "nav__black"}`}>
+    <nav className={`nav ${show && "nav-black"}`}>
       <img
         alt="Netflix logo"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
-        className="nav__logo"
+        className="nav-logo"
       />
       <img
         alt="User logged"
-        src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
-        className="nav__avatar"
+        src="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
+        className="nav-avatar"
       />
     </nav>
   );

@@ -37,29 +37,27 @@ const Banner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="banner__contents">
+      <div className="banner-contents">
         {/**Tittle */}
         <h1 className="banner__title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className="banner__buttons">
-          <button className="banner__button play">
+        <div className="banner-buttons">
+          <button className="banner-button play">
             <PlayArrowIcon />
             Play
           </button>
-          <button className="banner__button info">
+          <button className="banner-button info">
             <InfoIcon fontSize="small" paddingRight={20} marginRight={100} />
             <div className="space"></div> More Information
           </button>
         </div>
         {/**DIV > 2 BUTTONS */}
 
-        <h1 className="banner__description">
-          {truncate(movie?.overview, 150)}
-        </h1>
+        <h1 className="banner-description">{truncate(movie?.overview, 150)}</h1>
         {/*Description*/}
       </div>
-      <div className="banner--fadeBottom" />
+      <div className="banner-fadeBottom" />
     </header>
   );
 };

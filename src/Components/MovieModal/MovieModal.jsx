@@ -3,7 +3,6 @@ import "./MovieModal.css";
 import Youtube from "react-youtube";
 import movieTrailer from "movie-trailer";
 import CancelIcon from "@mui/icons-material/Cancel";
-import PropTypes from "prop-types";
 
 const MovieModal = ({
   backdrop_path,
@@ -15,17 +14,6 @@ const MovieModal = ({
   vote_average,
   setModalVisibility,
 }) => {
-  MovieModal.prototype = {
-    backdrop_path: PropTypes.string,
-    title: PropTypes.string,
-    overview: PropTypes.string,
-    name: PropTypes.string,
-    release_date: PropTypes.string,
-    first_air_date: PropTypes.string,
-    vote_average: PropTypes.number,
-    setModalVisibility: PropTypes.func,
-  };
-
   const base_url = "https://image.tmdb.org/t/p/original/";
   const [trailerUrl, setTrailerUrl] = useState("");
   const opts = {

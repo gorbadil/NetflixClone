@@ -8,9 +8,7 @@ import "./App.css";
 function App() {
   return (
     <div className="app">
-      {/**NAV */}
       <Navbar />
-      {/*BANNER*/}
       <Banner />
 
       <Row
