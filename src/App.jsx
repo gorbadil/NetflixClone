@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Banner from "./Components/Banner/Banner";
 import Row from "./Components/Row/Row";
-import requests from "../src/API/requests";
+import { rows } from "./Helper/rows";
 
 import "./App.css";
 
@@ -11,7 +11,17 @@ function App() {
       <Navbar />
       <Banner />
 
-      <Row
+      {rows.map((row) => (
+        <Row
+          key={row.id}
+          title={row.title}
+          id={row.id}
+          fetchUrl={row.fetchUrl}
+          isLargeRow={row.isLargeRow}
+        />
+      ))}
+
+      {/* <Row
         title="NETFLIX ORIGINALS"
         id="NO"
         fetchUrl={requests.fetchNetflixOriginals}
@@ -44,7 +54,7 @@ function App() {
         title="Documentaries"
         id="DM"
         fetchUrl={requests.fetchDocumentaries}
-      />
+      /> */}
     </div>
   );
 }
